@@ -6,7 +6,7 @@
 /*   By: jihekim <jihekim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 01:44:51 by jihekim           #+#    #+#             */
-/*   Updated: 2020/11/04 13:09:00 by jihekim          ###   ########.fr       */
+/*   Updated: 2020/11/04 14:51:04 by jihekim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,10 @@ int	ft_is_prime(int nb)
 	int sqrt;
 
 	sqrt = ft_sqrt(nb);
-	if (nb == 1 || nb == 0)
+	if (nb < 2)
 		return (0);
+	if (nb == 2)
+		return (1);
 	i = 2;
 	while (i <= sqrt)
 	{
